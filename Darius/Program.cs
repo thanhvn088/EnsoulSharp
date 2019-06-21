@@ -18,7 +18,6 @@ namespace Slutty_Darius
         public const string ChampName = "Darius";
         public const string Menuname = "Slutty Darius";
         public static Menu Config;
-        public static Orbwalking.Orbwalker Orbwalker;
         public static Spell Q, W, E, R;
 
         private static readonly AIHeroClient Player = ObjectManager.Player;
@@ -54,7 +53,6 @@ namespace Slutty_Darius
             TargetSelector.AddToMenu(targetSelectorMenu);
             Config.AddSubMenu(targetSelectorMenu);
 
-            Orbwalker = new Orbwalking.Orbwalker(Config.SubMenu("Orbwalking"));
             Config.AddSubMenu(new Menu("Drawings", "Drawings"));
             Config.SubMenu("Drawings").AddItem(new MenuItem("qDraw", "Q Drawing").SetValue(true));
             Config.SubMenu("Drawings").AddItem(new MenuItem("eDraw", "E Drawing").SetValue(true));
@@ -133,21 +131,21 @@ namespace Slutty_Darius
             Potion();
             KillSteal();
 
-            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Combo)
+            if (Orbwalker.ActiveMode == OrbwalkerMode.Combo)
             {
                 Combo();
             }
 
-            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.Mixed)
+            if (Orbwalker.ActiveMode == OrbwalkerMode.Harass)
             {
                 Mixed();
             }
 
-            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.LaneClear)
+            if (Orbwalker.ActiveMode == OrbwalkerMode.LaneClear)
             {
                 LaneClear();
             }
-            if (Orbwalker.ActiveMode == Orbwalking.OrbwalkingMode.None)
+            if (Orbwalker.ActiveMode == OrbwalkerMode.None)
             {
             }
             
