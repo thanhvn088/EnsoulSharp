@@ -118,7 +118,7 @@ namespace Slutty_Darius
                 E.Cast(unit);
             }
         }
-        static void BeforeAttack(Orbwalking.BeforeAttackEventArgs args)
+        static void BeforeAttack(OrbwalkerType.BeforeAttack args)
         {
             if (args.Target.IsValid<AIHeroClient>()
                 && W.IsReady())
