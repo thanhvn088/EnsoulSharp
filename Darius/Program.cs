@@ -116,7 +116,7 @@ namespace Slutty_Darius
         }
         static void BeforeAttack(OrbwalkerActionArgs args)
         {
-            if (args.Target is AIHeroClient)
+            if (args.Target is AIHeroClient
                 && W.IsReady())
             {
                 W.Cast();
