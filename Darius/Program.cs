@@ -1,9 +1,6 @@
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.Utility;
-using EnsoulSharp.SDK.Core.UI.IMenu.Values;
-using EnsoulSharp.SDK.Core.Utils;
-using EnsoulSharp.SDK.Core.Wrappers.Damages;
 using Menu = EnsoulSharp.SDK.MenuUI.Menu;
 using SharpDX;
 using System;
