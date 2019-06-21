@@ -104,7 +104,6 @@ namespace Slutty_Darius
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnUpdate += Game_OnUpdate;
             Interrupter.OnPossibleToInterrupt += OnInterruptableSpell;
-            Orbwalking.BeforeAttack += BeforeAttack;
 
 
         }
