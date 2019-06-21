@@ -3,7 +3,6 @@ using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.Utility;
 using Menu = EnsoulSharp.SDK.MenuUI.Menu;
 using EnsoulSharp.SDK.MenuUI.Values;
-using Orbwalking = EnsoulSharp.SDK.Core.Wrappers.Orbwalking;
 using SharpDX;
 using System;
 using System.Collections.Generic;
